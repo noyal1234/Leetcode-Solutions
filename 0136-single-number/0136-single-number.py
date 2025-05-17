@@ -1,6 +1,7 @@
 class Solution:
     def singleNumber(self, nums: List[int]) -> int:
-        res=0
-        for num in nums:
-            res = num^res
-        return res
+        
+        for num in set(nums):
+            if nums.count(num) == 1:
+                uniq = num
+        return uniq
