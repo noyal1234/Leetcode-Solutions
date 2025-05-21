@@ -19,8 +19,9 @@ class Solution:
         while right:
             if left.val != right.val:
                 return False
-            else:
-                return True
+            left=left.next
+            right = right.next
+        return True
     
 
 
